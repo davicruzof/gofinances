@@ -17,13 +17,12 @@ import {
   TransactionsList 
 } from './styles';
 
-import { 
-  HighlightCard 
-} from '@components/HighlightCard';
+
 import { 
   TransactionCard, 
   TransactionCardProps 
 } from '@components/TransactionCard';
+import { HighlightCard } from '@components/HighligthCard';
 
 const avatar = 'https://avatars.githubusercontent.com/u/47984117?v=4';
 
@@ -85,7 +84,7 @@ function Dashboard(): ReactElement {
           </LogoutButton>
         </UserWrapper>
       </Header>
-      <HighlightCards>
+      <HighlightCards >
         <HighlightCard 
           title='Entradas' 
           type="up"

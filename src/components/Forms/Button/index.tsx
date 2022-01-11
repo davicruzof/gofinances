@@ -1,10 +1,9 @@
 import React, { ReactElement } from 'react';
-import { TouchableOpacityProps } from 'react-native';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { GestureHandlerRootView, RectButtonProps } from 'react-native-gesture-handler';
 
 import { Container, Title } from './styles';
 
-interface Props extends TouchableOpacityProps {
+interface Props extends RectButtonProps {
   title: string
 }
 
@@ -14,7 +13,6 @@ function Button({title, ...rest}: Props): ReactElement {
     <GestureHandlerRootView>
       <Container
         {...rest}
-        onPress={() => console.log('Cliquei no btn laranja')}
       >
         <Title>{title}</Title>
       </Container>
