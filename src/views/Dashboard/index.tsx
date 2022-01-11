@@ -1,9 +1,29 @@
 import React, { ReactElement } from 'react';
 
-import { Container, Header, HighlightCards,UserWrapper, UserInfo, UserAvatar, Username, User, UserGreeting as UserGreeting, Icon, Transactions, Title, TransactionsList } from './styles';
+import { 
+  User, 
+  Icon, 
+  Title, 
+  Header, 
+  UserInfo, 
+  Username, 
+  Container, 
+  UserAvatar, 
+  UserWrapper, 
+  LogoutButton,
+  UserGreeting, 
+  Transactions, 
+  HighlightCards,
+  TransactionsList 
+} from './styles';
 
-import { HighlightCard } from '@components/HighligthCard';
-import { TransactionCard, TransactionCardProps } from '@components/TransactionCard';
+import { 
+  HighlightCard 
+} from '@components/HighlightCard';
+import { 
+  TransactionCard, 
+  TransactionCardProps 
+} from '@components/TransactionCard';
 
 const avatar = 'https://avatars.githubusercontent.com/u/47984117?v=4';
 
@@ -60,7 +80,9 @@ function Dashboard(): ReactElement {
               <Username>Davi</Username>
             </User>
           </UserInfo>
-          <Icon name="power" />
+          <LogoutButton onPress={() => console.log('OI')}>
+            <Icon name="power" />
+          </LogoutButton>
         </UserWrapper>
       </Header>
       <HighlightCards>

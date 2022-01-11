@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components';
+import { NavigationContainer } from '@react-navigation/native';
 
 import {
   useFonts,
@@ -11,7 +12,7 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import theme from  '@styles/theme';
-import { Register } from '@views/Register';
+import { AppRoutes } from '@routes/app.routes';
 
 export default function App() {
 
@@ -27,12 +28,14 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <NavigationContainer>
       <StatusBar 
         barStyle='dark-content' 
         backgroundColor="rgba(0,0,0,0)" 
         translucent 
       />
-      <Register />
+        <AppRoutes />
+      </NavigationContainer>
     </ThemeProvider>
   );
 }

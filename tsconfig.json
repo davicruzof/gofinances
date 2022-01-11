@@ -5,11 +5,11 @@
     "strict": true,
       "baseUrl": "./src",
       "paths": {
-        "@styles/*": ["./utils/styles/*"],
         "@views/*": ["./views/*"],
         "@assets/*": ["./assets/*"],
         "@routes/*": ["./routes/*"],
         "@services/*": ["./services/*"],
+        "@styles/*": ["./utils/styles/*"],
         "@interfaces/*": ["./interfaces/*"],
         "@components/*": ["./components/*"]
       },
