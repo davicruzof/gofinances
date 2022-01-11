@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { Category, Container, Icon } from './styles';
 
@@ -9,12 +10,14 @@ interface Props {
 
 function CategorySelectButton({ title, onPress }: Props): ReactElement {
   return (
-    <Container
-      onPress={onPress}
-    >
-        <Category>{title}</Category>
-        <Icon name='chevron-down' />
-    </Container>
+    <GestureHandlerRootView>
+      <Container
+        onPress={onPress}
+      >
+          <Category>{title}</Category>
+          <Icon name='chevron-down' />
+      </Container>
+    </GestureHandlerRootView>
   );
 };
 
