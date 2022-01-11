@@ -2,8 +2,8 @@ import React, { ReactElement } from 'react';
 
 import { Container, Header, HighlightCards,UserWrapper, UserInfo, UserAvatar, Username, User, UserGreeting as UserGreeting, Icon, Transactions, Title, TransactionsList } from './styles';
 
-import { HighlightCard } from '@components/HighlightCard';
-import { TransactionCard } from '@components/TransactionCard';
+import { HighlightCard } from '@components/HighligthCard';
+import { TransactionCard, TransactionCardProps } from '@components/TransactionCard';
 
 const avatar = 'https://avatars.githubusercontent.com/u/47984117?v=4';
 
