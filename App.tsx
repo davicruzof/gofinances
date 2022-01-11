@@ -11,7 +11,7 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import theme from  '@styles/theme';
-import { Dashboard } from '@views/Dashboard';
+import { Register } from '@views/Register';
 
 export default function App() {
 
@@ -32,7 +32,7 @@ export default function App() {
         backgroundColor="rgba(0,0,0,0)" 
         translucent 
       />
-      <Dashboard />
+      <Register />
     </ThemeProvider>
   );
 }
